@@ -1,1 +1,29 @@
-// Mixins Here
+.flex100() {
+    width:100%;
+    display:flex;
+}
+
+.headerStyle() {
+    color: @header-font-color;
+    background: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+}
+
+/*----Button----*/
+
+.btnStyle(@width, @height) {
+    width: 30%;
+    height:13%;
+    text-align: center;
+    font-size: 1.8rem;
+    border: 1px solid @btn-bg-color;
+    color: white;
+    background: @btn-bg-color;
+    border-radius: 8px;
+    padding-top: 2.3%;
+
+    &:hover {
+        color: @btn-bg-color;
+        background: white;
+      }
+}
