@@ -1,1 +1,32 @@
-// Navigation code here
+.nav {
+    .flex100();
+    flex-direction: column;
+    align-items: center;
+    .headerStyle();
+    
+    h1 {
+        font-size: 4rem;
+        margin: 1%;
+    }
+}
+
+nav {
+    margin: 1%;
+    .flex100();
+    justify-content: center;
+    margin-bottom: 1%;
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    a {
+        text-decoration: none;
+        color: @header-font-color;
+        margin: 0 1.5%;
+
+        @media @phone {
+            margin: 0 2%;
+            margin-bottom: 2%;
+        }
+    }
+}
+
